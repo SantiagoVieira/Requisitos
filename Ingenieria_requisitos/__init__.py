@@ -1,19 +1,19 @@
 from app import Administrador
 from app import Coordinador
 from app import Docente
-#Prueba autenticacion coordinador
-#coordinador = Coordinador('Juan Perez', 'usuario', 'contraseña')
-#coordinador.autenticacion_coordinador()
+##Prueba autenticacion coordinador
+coordinador = Coordinador('Juan Perez', 'usuario', 'contraseña')
+coordinador.autenticacion_coordinador()
 
 # Prueba autenticacion docente
 #docente = Docente('1', '2', '3')
 #docente.autenticacion_docente()
 
 # Prueba agregar docente programa
-#coordinador = Coordinador("Juan", "juan123", "contraseña123")
-#docente = Docente("docente1", "1234", "Pedro")
-#coordinador.agregar_docente_programa(docente, "Ingeniería de Sistemas")
-#print(coordinador.docentes_programas["Ingeniería de Sistemas"])
+##coordinador = Coordinador("Juan", "juan123", "contraseña123")
+##docente = Docente("docente1", "1234", "Pedro")
+##coordinador.agregar_docente_programa(docente, "Ingeniería de Sistemas")
+##print(coordinador.docentes_programas["Ingeniería de Sistemas"])
 
 # Prueba crear lista Docentes
 #admin = Administrador([], [], "admin", "1234")
@@ -41,14 +41,14 @@ from app import Docente
 # Clasificar docente grupo de investigacion
 # Crear una instancia de Coordinador
 
-coordinador1 = Coordinador('Juan', 'usuario', 'contraseña')
-docente1 = Docente('usuario1', 'contraseña1', 'Pedro')
-docente2 = Docente('usuario2', 'contraseña2', 'Ana')
-docente1.nombre = 'Pedro Pérez'
-docente2.nombre = 'Ana González'
-coordinador1.agregar_docente_programa(docente1, 'programa1')
-coordinador1.agregar_docente_programa(docente2, 'programa2')
-coordinador1.crear_lista_docentes(docente1)
-coordinador1.crear_lista_docentes(docente2)
-coordinador1.clasificar_docente_gdi()
-print(docente1.nombre)
+#coordinador1 = Coordinador('Juan', 'usuario', 'contraseña')
+#docente1 = Docente('usuario1', 'contraseña1', 'Pedro')
+#docente2 = Docente('usuario2', 'contraseña2', 'Ana')
+#docente1.nombre = 'Pedro Pérez'
+#docente2.nombre = 'Ana González'
+#coordinador1.agregar_docente_programa(docente1, 'programa1')
+#coordinador1.agregar_docente_programa(docente2, 'programa2')
+#coordinador1.crear_lista_docentes(docente1)
+#coordinador1.crear_lista_docentes(docente2)
+#coordinador1.clasificar_docente_gdi()
+#print(docente1.nombre)

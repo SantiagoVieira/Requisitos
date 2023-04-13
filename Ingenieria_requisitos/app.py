@@ -55,6 +55,12 @@ class Docente(Administrador):
         super().__init__(coordinadores=[], docentes=[], usuario=usuario, contraseña=contraseña)
         self.nombre = nombre
 
+    def get(self):
+        pass
+
 class Informacion:
     def __init__(self, producto):
         self.producto = producto
+
+    def get_informacion(self):
+        pass
