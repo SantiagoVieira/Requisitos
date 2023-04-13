@@ -2,7 +2,7 @@ from app import Administrador
 from app import Coordinador
 from app import Docente
 #Prueba autenticacion coordinador
-#oordinador = Coordinador('Juan Perez', 'usuario', 'contraseña')
+#coordinador = Coordinador('Juan Perez', 'usuario', 'contraseña')
 #coordinador.autenticacion_coordinador()
 
 # Prueba autenticacion docente
@@ -40,15 +40,15 @@ from app import Docente
 
 # Clasificar docente grupo de investigacion
 # Crear una instancia de Coordinador
-coordinador = Coordinador("Juan", "juan123", "contraseña123")
 
-# Agregar algunos docentes a la lista
-docente1 = Docente("docente1", "1234", "Pedro")
-docente2 = Docente("docente2", "5678", "María")
-docente3 = Docente("docente3", "9012", "Juan")
-docente4 = Docente("docente4", "3456", "Luis")
-coordinador.crear_lista_docentes(docente1)
-coordinador.crear_lista_docentes(docente2)
-coordinador.crear_lista_docentes(docente3)
-coordinador.crear_lista_docentes(docente4)
-coordinador.clasificar_docente_gdi()
+coordinador1 = Coordinador('Juan', 'usuario', 'contraseña')
+docente1 = Docente('usuario1', 'contraseña1', 'Pedro')
+docente2 = Docente('usuario2', 'contraseña2', 'Ana')
+docente1.nombre = 'Pedro Pérez'
+docente2.nombre = 'Ana González'
+coordinador1.agregar_docente_programa(docente1, 'programa1')
+coordinador1.agregar_docente_programa(docente2, 'programa2')
+coordinador1.crear_lista_docentes(docente1)
+coordinador1.crear_lista_docentes(docente2)
+coordinador1.clasificar_docente_gdi()
+print(docente1.nombre)

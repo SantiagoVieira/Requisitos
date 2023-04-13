@@ -1,5 +1,5 @@
 class Administrador:
-    def _init_(self, coordinadores, docentes, usuario, contraseña):
+    def __init__(self, coordinadores, docentes, usuario, contraseña):
         self.coordinadores = coordinadores
         self.docentes = docentes
         self.usuario = usuario
@@ -31,13 +31,12 @@ class Administrador:
         self.docentes_programas[programa].append(docente)
 
     def crear_lista_docentes(self, docente):
-
         self.lista_docentes.append(docente)
 
 
 class Coordinador(Administrador):
-    def _init_(self, nombre, usuario, contraseña):
-        super()._init_(coordinadores=[], docentes=[], usuario=usuario, contraseña=contraseña)
+    def __init__(self, nombre, usuario, contraseña):
+        super().__init__(coordinadores=[], docentes=[], usuario=usuario, contraseña=contraseña)
         self.nombre = nombre
 
     def clasificar_docente_programa(self, programa):
@@ -52,10 +51,10 @@ class Coordinador(Administrador):
             self.asignaciones_investigacion[investigacion] = docente
 
 class Docente(Administrador):
-    def _init_(self, usuario, contraseña, nombre):
-        super()._init_(coordinadores=[], docentes=[], usuario=usuario, contraseña=contraseña)
+    def __init__(self, usuario, contraseña, nombre):
+        super().__init__(coordinadores=[], docentes=[], usuario=usuario, contraseña=contraseña)
         self.nombre = nombre
 
 class Informacion:
-    def _init_(self, producto):
+    def __init__(self, producto):
         self.producto = producto
