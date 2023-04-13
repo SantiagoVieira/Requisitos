@@ -1,0 +1,54 @@
+from app import Administrador
+from app import Coordinador
+from app import Docente
+#Prueba autenticacion coordinador
+#oordinador = Coordinador('Juan Perez', 'usuario', 'contraseña')
+#coordinador.autenticacion_coordinador()
+
+# Prueba autenticacion docente
+#docente = Docente('1', '2', '3')
+#docente.autenticacion_docente()
+
+# Prueba agregar docente programa
+#coordinador = Coordinador("Juan", "juan123", "contraseña123")
+#docente = Docente("docente1", "1234", "Pedro")
+#coordinador.agregar_docente_programa(docente, "Ingeniería de Sistemas")
+#print(coordinador.docentes_programas["Ingeniería de Sistemas"])
+
+# Prueba crear lista Docentes
+#admin = Administrador([], [], "admin", "1234")
+
+#docente1 = Docente("docente1", "1234", "Pedro")
+#docente2 = Docente("docente2", "1234", "Juan")
+#docente3 = Docente("docente3", "1234", "María")
+
+#admin.crear_lista_docentes(docente1)
+#admin.crear_lista_docentes(docente2)
+#admin.crear_lista_docentes(docente3)
+#print("Lista de docentes:")
+#for docente in admin.lista_docentes:
+#    print(docente.nombre)
+
+# Clasificar dorcente programa
+#coordinador = Coordinador("Juan", "juan123", "contraseña123")
+#docente = Docente("docente1", "1234", "Pedro")
+#coordinador.agregar_docente_programa(docente, "Ingeniería de Sistemas")
+#programa = "Ingeniería de Sistemas"
+#docentes_programa = coordinador.clasificar_docente_programa(programa)
+#for docente in docentes_programa:
+#    print(docente.nombre)
+
+# Clasificar docente grupo de investigacion
+# Crear una instancia de Coordinador
+coordinador = Coordinador("Juan", "juan123", "contraseña123")
+
+# Agregar algunos docentes a la lista
+docente1 = Docente("docente1", "1234", "Pedro")
+docente2 = Docente("docente2", "5678", "María")
+docente3 = Docente("docente3", "9012", "Juan")
+docente4 = Docente("docente4", "3456", "Luis")
+coordinador.crear_lista_docentes(docente1)
+coordinador.crear_lista_docentes(docente2)
+coordinador.crear_lista_docentes(docente3)
+coordinador.crear_lista_docentes(docente4)
+coordinador.clasificar_docente_gdi()
